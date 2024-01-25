@@ -1,6 +1,5 @@
  .campaign {
   padding: 6vw;
-  height: 110vw;
   margin: 10% auto;
   background-color: #FCCDC3;
   border-radius: 3em;
@@ -8,6 +7,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media(max-width:768px){
+  .campaign{
+    height: 110vw;
+  }
 }
 
 .campaign ul{
@@ -180,3 +184,34 @@
     border-radius: 26% 42% 43% 58%/48% 22% 25% 57%;
   }
 }
+.prize1 {
+  background: url(../../images/prize1-1.png) no-repeat;
+  background-size: contain;
+  background-position: right 3vh;
+}
+.prize2 {
+  background: url(../../images/prize2-1.png) no-repeat;
+  background-size: contain;
+  background-position: left 0.5vh;
+}
+.text-wrapper {
+  height: 35vh;
+}
+.flutter {
+  animation: container 3.5s linear infinite; 
+  animation-fill-mode: both;
+}
+
+@keyframes container {
+  0%, 
+  100% {
+      transition-timing-function: cubic-bezier(0.215, .61, .355, 1); 
+      transform: translate3d(0, 0, 0);
+  }
+  50% {
+      transition-timing-function: cubic-bezier(2, 0.50, 0.855, 0.060);
+      transform: translate3d(0, -3vh, 0) rotate(10deg);
+
+  }
+}
+

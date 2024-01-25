@@ -151,6 +151,7 @@
     }
     body #header09-1k img{
       top: 50% !important;
+      width: 90% !important;
     }
   }
 .nav-dropdown.navbar-toggleable-xl {
