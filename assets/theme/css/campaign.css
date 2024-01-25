@@ -1,0 +1,179 @@
+ .campaign {
+  padding: 5em;
+  margin: 10% auto;
+  background-color: #FCCDC3;
+  border-radius: 3em;
+  animation: fluidrotate 30s ease 0s infinite;
+  z-index: 10;
+}
+
+.campaign ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(150px,1fr) minmax(150px,1fr);
+  gap: 1vw;
+}
+
+.campaign ul li a {
+  padding: 2vw;
+  background: #fff;
+  height: 100%;
+}
+
+ .campaign ul li a .fa-barcode {
+  color: #E0211B;
+  cursor: pointer;
+}
+ .campaign ul li a .fa-person-walking {
+  color: #CB5A1E;
+}
+ .campaign ul li a .fa-instagram {
+  color: linear-gradient(0.25turn, #C937A9, #FD5343, #FFD153);
+}
+ .campaign ul li a .fa-seedling {
+  color: #2A6B3A;
+}
+ .campaign p {
+  margin: 4% 0 2%;
+  font-size: 0.5em;
+  text-align: center;
+}
+.campaignSP .phone_layer {
+  margin: 0 auto;
+  width: 50vw;
+  height: 30vw;
+  padding: 10px;
+  cursor: pointer;
+}
+.campaignSP .phone_layer .slider.center {
+  overflow: hidden;
+}
+.campaignCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.campaignCard i {
+  font-size: 3rem;
+  margin: 2vh auto 1vh;
+}
+.campaignCard p {
+  text-align: center;
+  color: #EE4A4A;
+}
+.campaignCard span {
+  font-size: 0.8em;
+  text-align: center;
+  max-width: 30vw;
+  margin-top: 1vh;
+}
+.campaignCard .fa-barcode {
+  color: #E0211B;
+}
+.campaignCard .fa-person-walking {
+  color: #CB5A1E;
+}
+.campaignCard .fa-seedling {
+  color: #2A6B3A;
+}
+.campaignSP .slick-slide {
+  background: white;
+  margin: 10px;
+  height: 24vw;
+  border-radius: 20px;
+}
+.campaignSP .slick-track {
+  display: flex;
+  align-items: center;
+}
+.campaignSP .slick-track div {
+  transition: all 1s;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 2vh 5vw;
+}
+
+.prize .prizeCardB,
+  .prize .prizeCardA {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  background-color: #fdcdc3;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: minmax(100px, 1fr);
+
+}
+ .prize .prizeCardB img,
+ .prize .prizeCardA img {
+  margin: auto;
+  display: block;
+  margin-bottom: 7%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.prize .prizeCardA img {
+  width: 51%;
+  max-width: 100%;
+  max-height: 100%;
+}
+ .prize .prizeCardB span,
+ .prize .prizeCardA span {
+  position: relative;
+  z-index: 10;
+}
+ .prize .prizeCardB .bubbleContain,
+ .prize .prizeCardA .bubbleContain {
+  --bubbleContain-background:#ED5565;
+  display: grid;
+  grid-area: bubbleContain;
+  min-height: 12rem;
+}
+
+ .prize .prizeCardB .bubbleContain .bubbles .bubble,
+ .prize .prizeCardA .bubbleContain .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--bubbleContain-background);
+  border-radius: 100%;
+  animation: bubble-size var(--time, 6s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 6s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+ .prize {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 5vw;
+}
+
+
+
+
+@keyframes fluidrotate {
+  0%, 100% {
+    border-radius: 53% 37% 23% 35%/20% 38% 77% 45%;
+  }
+  15% {
+    border-radius: 24% 53% 44% 32%/45% 50% 30% 37%;
+  }
+  35% {
+    border-radius: 31% 36% 25% 23%/43% 37% 50% 24%;
+  }
+  55% {
+    border-radius: 23% 68% 37% 42%/50% 55% 70% 43%;
+  }
+  75% {
+    border-radius: 44% 30% 23% 39%/37% 30% 40% 22%;
+  }
+  95% {
+    border-radius: 26% 42% 43% 58%/48% 22% 25% 57%;
+  }
+}
