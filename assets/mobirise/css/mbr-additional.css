@@ -1404,6 +1404,12 @@ a {
   padding-bottom: 7rem;
   /* background-color: #fff9f6; */
 }
+@media (max-width:768px){
+  .cid-u1SGeTHDcs {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+  }
+}
 .cid-u1SGeTHDcs .mbr-fallback-image.disabled {
   display: none;
 }
@@ -1596,6 +1602,7 @@ a {
 .cid-u1MY2ZmoMm .embla__viewport.is-draggable {
   cursor: grab;
 }
+
 .cid-u1MY2ZmoMm .embla__viewport.is-dragging {
   cursor: grabbing;
 }

@@ -202,7 +202,7 @@
   animation-fill-mode: both;
 }
 
-@keyframes container {
+/* @keyframes container {
   0%, 
   100% {
       transition-timing-function: cubic-bezier(0.215, .61, .355, 1); 
@@ -213,5 +213,5 @@
       transform: translate3d(0, -3vh, 0) rotate(10deg);
 
   }
-}
+} */
 
