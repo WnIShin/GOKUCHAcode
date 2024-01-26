@@ -668,8 +668,11 @@ input[type=range] {
   padding-right: 0 !important;
 }
 
-.modal-dialog,
+/* .modal-dialog,
 .modal-content {
+  height: 100%;
+} */
+.modal-dialog{
   height: 100%;
 }
 

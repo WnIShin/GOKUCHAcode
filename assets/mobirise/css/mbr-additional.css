@@ -1169,10 +1169,12 @@ a {
 .cid-tJS6tZXiPa nav.opened .hamburger span:nth-child(2) {
   transform: rotate(45deg);
   transition: all 0.25s;
+  opacity: 0;
 }
 .cid-tJS6tZXiPa nav.opened .hamburger span:nth-child(3) {
   transform: rotate(-45deg);
   transition: all 0.25s;
+  opacity: 0;
 }
 .cid-tJS6tZXiPa nav.opened .hamburger span:nth-child(4) {
   top: 8px;
@@ -1339,7 +1341,7 @@ a {
   background-image: url("../../../assets/images/KVG.png");
 } */
 #header09-1k{
-  height: 50vw;
+  height: 90vh;
   background-image: url("../../../assets/images/KVG.png");
 }
 .cid-u1MPztjDyG .mbr-overlay {
@@ -1581,14 +1583,22 @@ a {
 .cid-u1MY2ZmoMm .embla__button.embla__button--prev {
   left: 0;
   margin-left: 2.5rem;
+  opacity: 0.1;
 }
 .cid-u1MY2ZmoMm .embla__button.embla__button--next {
   right: 0;
   margin-right: 2.5rem;
+  opacity: 0.1;
 }
+.cid-u1MY2ZmoMm .embla__button.embla__button--pre:hover ,
+.cid-u1MY2ZmoMm .embla__button.embla__button--next:hover{
+  opacity: 1;
+}
+
 @media (max-width: 767px) {
   .cid-u1MY2ZmoMm .embla__button {
-    top: auto;
+    /* top: auto; */
+    top: 50%;
   }
 }
 .cid-u1MY2ZmoMm .embla {
@@ -1602,15 +1612,13 @@ a {
 .cid-u1MY2ZmoMm .embla__viewport.is-draggable {
   cursor: grab;
 }
-
 .cid-u1MY2ZmoMm .embla__viewport.is-dragging {
   cursor: grabbing;
 }
 .cid-u1MY2ZmoMm .embla__container {
   display: flex;
   user-select: none;
-  justify-content: center;
-  -webkit-touch-callout: none;
+    -webkit-touch-callout: none;
   -khtml-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }

@@ -12,14 +12,14 @@
   --animate-delay: 0.1s;
   --animate-repeat: 1;
 }
-/* .animate__animated {
+.animate__animated {
   -webkit-animation-duration: var(--animate-duration)s;
   animation-duration: var(--animate-duration);
   -webkit-animation-duration: var(--animate-duration);
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-} */
+}
 .animate__animated.animate__infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -1822,10 +1822,10 @@
     opacity: 1;
   }
 }
-/* .animate__fadeIn {
+.animate__fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-} */
+}
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;

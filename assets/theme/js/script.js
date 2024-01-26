@@ -1772,3 +1772,42 @@ window.addEventListener("resize", () => {
     ? (kv.src = "assets/images/KVSP.png")
     : (kv.src = "assets/images/KV1.png");
 });
+const next = document.querySelector("button.embla__button.embla__button--next");
+const prev = document.querySelector("button.embla__button.embla__button--prev");
+
+function dn() {
+  next.style.display = "none";
+  prev.style.display = "none";
+}
+
+function d() {
+  next.style.display = "block";
+  prev.style.display = "block";
+}
+
+const SL = document.querySelector(".embla__container");
+const WS = window.innerWidth;
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 1650) {
+    dn();
+    SL.style.justifyContent = "center";
+  } else {
+    d();
+  }
+});
+
+const navLi = document.querySelectorAll(".navbar-nav li a");
+const navbarCollapse = document.querySelector(".navbar-collapse");
+const hbSpan = document.querySelectorAll(".hamburger span");
+const navThirdLine = document.querySelector(
+  ".navbar-dropdown.navbar-fixed-top"
+);
+navLi.forEach((link) => {
+  link.addEventListener("click", function () {
+    navbarCollapse.classList.remove("show");
+    navThirdLine.classList.remove("opened");
+    hbSpan.forEach((span) => {
+      span.style.opacity = 1;
+    });
+  });
+});
